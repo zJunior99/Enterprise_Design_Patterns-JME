@@ -1,22 +1,43 @@
 # Repository Pattern — Python
 
-Ejemplo del patrón Repository del catálogo de Fowler implementado en Python.
+Demonstration project for the article "Repository Pattern: The Pattern That Keeps Your Code Clean and Testable" published on Medium.  
+Implements the Repository Pattern applied to a user management system.
 
-## Estructura
+## Requirements
 
-src/
-├── models.py       # Entidad User
-├── repository.py   # Interfaz + SQLite + InMemory
-└── service.py      # Lógica de negocio
+- Python 3.11 or higher
 
-tests/
-└── test_user_service.py
+## Install
 
-## Correr tests
-
+```bash
 pip install -r requirements.txt
+```
+
+## Test
+
+```bash
 pytest tests/ -v
+```
 
-## CI/CD
+## Project Structure
+├── src/
 
-GitHub Actions corre los tests automáticamente en cada push a `main`.
+│   ├── models.py         # User entity
+
+│   ├── repository.py     # Interface + SQLite + InMemory
+
+│   └── service.py        # Business logic
+
+├── tests/
+
+│   └── test_user_service.py
+
+└── .github/workflows/    # CI/CD pipeline
+
+## Article
+
+[Repository Pattern: The Pattern That Keeps Your Code Clean and Testable](https://medium.com/p/c1d7fea6bd9e)
+
+## Student
+
+Junior Mamani Estaña
